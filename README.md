@@ -36,6 +36,12 @@ Italianate arches, Gandhi’s internment rooms, the samadhis, and the lawns of t
 
 ![Aga Khan Palace 3D](docs/screenshots/aga-khan-palace.png)
 
+#### Shinde Chhatri
+
+Mahadji Shinde’s Anglo-Rajasthani memorial in Wanowrie — yellow-sandstone chhatri hall, English stained glass, and the Shiva temple and samadhi behind.
+
+![Shinde Chhatri 3D](docs/screenshots/shinde-chhatri.png)
+
 ### Museums & memorials
 
 #### Raja Dinkar Kelkar Museum
@@ -109,6 +115,9 @@ Pune’s highest hill — shrine, quarry pond, trails, and the city stacked belo
 The Mutha wall, Khadakwasla Lake, eleven radial sluices, the chowpatty promenade, and Sinhagad on the skyline.
 
 ![Khadakwasla Dam 3D](docs/screenshots/khadakwasla-dam.png)
+
+> Desktop stills above. `docs/screenshots/<slug>-mobile.png` has the 390 px view of
+> every place, and `npm run shots` regenerates the whole set.
 
 ---
 

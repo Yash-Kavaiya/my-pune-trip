@@ -24,7 +24,7 @@ import {
   Plane,
   Ship,
   Umbrella,
-  Snake,
+  Worm,
   PawPrint,
   type LucideIcon,
 } from "lucide-react";
@@ -59,7 +59,7 @@ export const ICONS: Record<string, LucideIcon> = {
   plane: Plane,
   ship: Ship,
   umbrella: Umbrella,
-  snake: Snake,
+  snake: Worm,
   "paw-print": PawPrint,
 };
 

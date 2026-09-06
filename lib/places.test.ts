@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import path from "node:path";
 import { describe, it, expect } from "vitest";
 import {
   filterPlaces,
@@ -10,6 +12,9 @@ import { slugify } from "@/lib/utils";
 import type { Place, PlaceRequest } from "@/lib/types";
 
 const places = getSeedPlaces();
+
+/** The only seed place without an interactive 3D model — keeps the gradient. */
+const NO_MODEL_SLUG = "katraj-zoo-park";
 
 describe("slugify", () => {
   it("makes URL-safe slugs", () => {
@@ -125,6 +130,25 @@ describe("Katraj Zoo Park seed place", () => {
     expect(place!.coordinates.lng).toBeLessThan(73.88);
     const oldCityDist = Math.hypot(place!.coordinates.lat - 18.52, place!.coordinates.lng - 73.85);
     expect(oldCityDist).toBeGreaterThan(0.04);
+  });
+});
+
+describe("place cover images", () => {
+  const coversDir = path.join(process.cwd(), "public", "covers");
+
+  it("every 3D place has a cover webp wired to heroImage and present on disk", () => {
+    for (const place of places.filter((p) => p.slug !== NO_MODEL_SLUG)) {
+      expect(place.heroImage, `${place.slug} heroImage`).toBe(`/covers/${place.slug}.webp`);
+      expect(
+        existsSync(path.join(coversDir, `${place.slug}.webp`)),
+        `public/covers/${place.slug}.webp missing`,
+      ).toBe(true);
+    }
+  });
+
+  it("Katraj Zoo keeps the branded gradient (no 3D model to still)", () => {
+    const zoo = places.find((p) => p.slug === NO_MODEL_SLUG);
+    expect(zoo?.heroImage).toBe("");
   });
 });
 
