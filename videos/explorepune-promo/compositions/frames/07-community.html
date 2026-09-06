@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+                #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          color: #2d211a;
+        }
+        .bg {
+          position: absolute;
+          inset: 0;
+          background: #fcfaf4;
+        }
+        .plate {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 820px;
+          height: 1080px;
+          object-fit: cover;
+        }
+        .title {
+          position: absolute;
+          left: 96px;
+          top: 160px;
+          right: 900px;
+          font-family: "EB Garamond", Georgia, serif;
+          font-size: 68px;
+          font-weight: 700;
+          line-height: 1.08;
+        }
+        .item {
+          position: absolute;
+          left: 96px;
+          font-family: Inter, "Segoe UI", sans-serif;
+          font-size: 30px;
+        }
+        .dot {
+          color: #d9571e;
+          margin-right: 14px;
+        }
+      </style>
+      <div id="root" data-composition-id="07-community" data-width="1920" data-height="1080">
+        <div class="bg"></div>
+        <img class="plate" src="assets/3d/saras-baug.png" alt="3D Saras Baug" />
+        <h2 class="title" id="com-title">A one-person love letter. Kept alive by Sundays.</h2>
+        <p class="item" id="com-a" style="top: 560px"><span class="dot">✱</span>Leave a review after you walk it.</p>
+        <p class="item" id="com-b" style="top: 640px"><span class="dot">✱</span>Suggest a place we missed.</p>
+        <p class="item" id="com-c" style="top: 720px"><span class="dot">✱</span>Sponsor next month's AI credit on UPI.</p>
+      </div>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#com-title", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.2);
+        tl.fromTo("#com-a", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 0.7);
+        tl.fromTo("#com-b", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 1.0);
+        tl.fromTo("#com-c", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 1.3);
+        window.__timelines["07-community"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

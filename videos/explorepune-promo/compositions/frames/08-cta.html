@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+                #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          color: #fcfaf4;
+        }
+        .plate {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .veil {
+          position: absolute;
+          inset: 0;
+          background: rgba(20, 14, 10, 0.55);
+        }
+        .mark {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 300px;
+          text-align: center;
+          font-family: "EB Garamond", Georgia, serif;
+          font-size: 120px;
+          font-weight: 800;
+          letter-spacing: -0.03em;
+        }
+        .mark em {
+          font-style: italic;
+          color: #d9571e;
+          font-weight: 500;
+        }
+        .url {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 480px;
+          text-align: center;
+          font-family: Inter, "Segoe UI", sans-serif;
+          font-size: 36px;
+          letter-spacing: 0.04em;
+        }
+        .tag {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 160px;
+          text-align: center;
+          font-family: Inter, "Segoe UI", sans-serif;
+          font-size: 28px;
+          color: #fde3c9;
+        }
+      </style>
+      <div id="root" data-composition-id="08-cta" data-width="1920" data-height="1080">
+        <img class="plate" src="assets/3d/okayama-friendship-garden.png" alt="3D Okayama Friendship Garden" />
+        <div class="veil"></div>
+        <h1 class="mark" id="cta-mark">Explore<em>Pune</em></h1>
+        <p class="url" id="cta-url">explorepune.vercel.app</p>
+        <p class="tag" id="cta-tag">Discover the soul of Pune</p>
+      </div>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#cta-mark", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 0.25);
+        tl.fromTo("#cta-url", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.out" }, 0.9);
+        tl.fromTo("#cta-tag", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.out" }, 1.2);
+        window.__timelines["08-cta"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

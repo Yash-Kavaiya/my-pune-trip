@@ -1,0 +1,317 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Playfair Display",
+      "fontSize": "60px",
+      "fontWeight": "700",
+      "lineHeight": "66px",
+      "letterSpacing": "-1.5px",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "sampleText": "Discover the soul of Pune"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Playfair Display",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "36px",
+      "letterSpacing": "-0.75px",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "sampleText": "What kind of Pune are you in the mood for?"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "Playfair Display",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "28px",
+      "letterSpacing": "-0.45px",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "sampleText": "Forts & Palaces"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Geist",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "lab(45.3752 6.0969 9.68123)",
+      "sampleText": "Forts and palaces, beloved temples, Japanese gardens and bre"
+    },
+    {
+      "role": "link",
+      "fontFamily": "Playfair Display",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "sampleText": "ExplorePune"
+    },
+    {
+      "role": "code",
+      "fontFamily": "Geist Mono",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "sampleText": "explorepune@ybl"
+    },
+    {
+      "role": "label",
+      "fontFamily": "Geist",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "color": "lab(98.8687 0.579536 3.77229)",
+      "sampleText": "Featured"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      0,
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64
+    ],
+    "baseUnit": 8
+  },
+  "radius": [
+    "9.6px",
+    "12px",
+    "21.6px",
+    "31.2px",
+    "3.35544e+07px"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+      "count": 14
+    }
+  ],
+  "buttons": [
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "padding": "0px",
+      "borderRadius": "12px",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "height": "32px"
+    },
+    {
+      "label": "Suggest a place",
+      "background": "lab(54.5282 50.1517 56.7006)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "lab(98.8687 0.579536 3.77229)",
+      "padding": "0px 10px",
+      "borderRadius": "12px",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "height": "32px"
+    },
+    {
+      "label": "Search",
+      "background": "lab(54.5282 50.1517 56.7006)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "lab(98.8687 0.579536 3.77229)",
+      "padding": "0px 20px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "height": "32px"
+    },
+    {
+      "label": "Shaniwar Wada",
+      "background": "oklab(0.984999 0.000687361 0.00799215 / 0.7)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "lab(45.3752 6.0969 9.68123)",
+      "padding": "0px 12px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid lab(88.4254 1.4244 5.94804)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "28px"
+    },
+    {
+      "label": "Copy UPI ID",
+      "background": "lab(98.2924 0.224292 3.04729)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "padding": "0px 10px",
+      "borderRadius": "9.6px",
+      "border": "1px solid lab(88.4254 1.4244 5.94804)",
+      "boxShadow": "none",
+      "fontSize": "12.8px",
+      "fontWeight": "500",
+      "height": "28px"
+    },
+    {
+      "label": "Sponsor on UPI",
+      "background": "lab(54.5282 50.1517 56.7006)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "lab(98.8687 0.579536 3.77229)",
+      "padding": "0px 10px",
+      "borderRadius": "9.6px",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "12.8px",
+      "fontWeight": "500",
+      "height": "28px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "lab(100 0 0)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "lab(14.0765 4.59485 7.2266)",
+      "padding": "20px",
+      "borderRadius": "21.6px",
+      "border": "1px solid oklab(0.899999 0.00413206 0.015475 / 0.7)",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "114px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "oklab(0.984999 0.000687361 0.00799215 / 0.65)",
+    "backgroundImage": "",
+    "backdropFilter": "blur(8px)",
+    "color": "lab(14.0765 4.59485 7.2266)",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "",
+    "boxShadow": "none",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": "65px"
+  },
+  "chips": [
+    {
+      "label": "Featured",
+      "background": "oklab(0.620007 0.132811 0.115474 / 0.95)",
+      "color": "lab(98.8687 0.579536 3.77229)",
+      "padding": "2px 8px",
+      "borderRadius": "31.2px",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "height": "20px"
+    },
+    {
+      "label": "Shaniwar Wada",
+      "background": "oklab(0.984999 0.000687361 0.00799215 / 0.7)",
+      "color": "lab(45.3752 6.0969 9.68123)",
+      "padding": "0px 12px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid lab(88.4254 1.4244 5.94804)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "28px"
+    },
+    {
+      "label": "3",
+      "background": "lab(95.6312 0.829548 5.29335)",
+      "color": "lab(45.3752 6.0969 9.68123)",
+      "padding": "2px 8px",
+      "borderRadius": "3.35544e+07px",
+      "border": "0px solid lab(88.4254 1.4244 5.94804)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "20px"
+    },
+    {
+      "label": "Temples & Spiritual",
+      "background": "oklab(0.984998 0.000687361 0.00799215 / 0.8)",
+      "color": "oklab(0.26 0.0126152 0.0180265 / 0.8)",
+      "padding": "4px 10px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.899999 0.00413206 0.015475 / 0.6)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "height": "26px"
+    }
+  ],
+  "statCells": [],
+  "tabs": [],
+  "backgrounds": [
+    {
+      "value": "radial-gradient(80% 60% at 50% -10%, lab(54.5282 50.1517 56.7006 / 0.14), rgba(0, 0, 0, 0) 60%), radial-gradient(60% 50% at 100% 0px, lab(69.8061 16.2408 63.3063 / 0.12), rgba(0, 0, 0, 0) 55%)",
+      "area": 1497888
+    },
+    {
+      "value": "radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.7) 1px, rgba(0, 0, 0, 0) 0px)",
+      "area": 466380
+    },
+    {
+      "value": "linear-gradient(to top, oklab(0 0 0 / 0.25) 0%, rgba(0, 0, 0, 0) 50%, oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 100%)",
+      "area": 466380
+    },
+    {
+      "value": "linear-gradient(140deg, lab(54.5282 50.1517 56.7006), oklab(0.341004 0.073046 0.0635108))",
+      "area": 186563
+    },
+    {
+      "value": "linear-gradient(140deg, lab(40.2209 51.8014 18.0323), oklab(0.275003 0.0849905 0.0227826))",
+      "area": 93272
+    },
+    {
+      "value": "linear-gradient(140deg, lab(69.8061 16.2408 63.3063), oklab(0.407002 0.0160047 0.0753215))",
+      "area": 93272
+    }
+  ],
+  "glass": [
+    {
+      "backdropFilter": "blur(8px)",
+      "background": "oklab(0.984999 0.000687361 0.00799215 / 0.65)",
+      "border": "",
+      "borderRadius": "0px",
+      "boxShadow": "",
+      "area": 124800
+    },
+    {
+      "backdropFilter": "blur(8px)",
+      "background": "oklab(0.984999 0.000687361 0.00799215 / 0.9)",
+      "border": "1px solid oklab(0.899999 0.00413206 0.015475 / 0.7)",
+      "borderRadius": "3.35544e+07px",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.05) 0px 10px 15px -3px, oklab(0 0 0 / 0.05) 0px 4px 6px -4px",
+      "area": 26496
+    }
+  ]
+}

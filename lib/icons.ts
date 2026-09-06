@@ -23,6 +23,9 @@ import {
   Flame,
   Plane,
   Ship,
+  Umbrella,
+  Snake,
+  PawPrint,
   type LucideIcon,
 } from "lucide-react";
 
@@ -55,6 +58,9 @@ export const ICONS: Record<string, LucideIcon> = {
   flame: Flame,
   plane: Plane,
   ship: Ship,
+  umbrella: Umbrella,
+  snake: Snake,
+  "paw-print": PawPrint,
 };
 
 export function getIcon(key: string): LucideIcon {

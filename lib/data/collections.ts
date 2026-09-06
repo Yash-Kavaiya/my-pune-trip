@@ -38,6 +38,7 @@ export const COLLECTIONS: Collection[] = [
       "shaniwar-wada",
       "lal-mahal",
       "dagdusheth-halwai-ganapati",
+      "shinde-chhatri",
       "aga-khan-palace",
     ],
   },
@@ -49,7 +50,7 @@ export const COLLECTIONS: Collection[] = [
     placeSlugs: [
       "saras-baug",
       "empress-garden",
-      "national-war-memorial",
+      "katraj-zoo-park",
       "okayama-friendship-garden",
     ],
   },

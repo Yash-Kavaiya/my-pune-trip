@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+                #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          color: #2d211a;
+        }
+        .bg {
+          position: absolute;
+          inset: 0;
+          background: #181615;
+        }
+        .grid {
+          position: absolute;
+          left: 48px;
+          right: 48px;
+          top: 160px;
+          bottom: 48px;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          gap: 10px;
+        }
+        .grid img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+        .head {
+          position: absolute;
+          left: 56px;
+          top: 48px;
+          font-family: "EB Garamond", Georgia, serif;
+          font-size: 56px;
+          font-weight: 700;
+          color: #fcfaf4;
+        }
+        .count {
+          position: absolute;
+          right: 56px;
+          top: 64px;
+          font-family: "IBM Plex Mono", ui-monospace, monospace;
+          color: #d9571e;
+          font-size: 22px;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+        }
+      </style>
+      <div id="root" data-composition-id="04-gallery" data-width="1920" data-height="1080">
+        <div class="bg"></div>
+        <h2 class="head" id="gal-head">Fifteen dioramas. Zero imported meshes.</h2>
+        <div class="count" id="gal-count">Every tile is a live 3D page</div>
+        <div class="grid" id="gal-grid">
+          <img src="assets/3d/shaniwar-wada.png" alt="3D Shaniwar Wada" />
+          <img src="assets/3d/sinhagad-fort.png" alt="3D Sinhagad Fort" />
+          <img src="assets/3d/aga-khan-palace.png" alt="3D Aga Khan Palace" />
+          <img src="assets/3d/lal-mahal.png" alt="3D Lal Mahal" />
+          <img src="assets/3d/pataleshwar-cave-temple.png" alt="3D Pataleshwar Cave" />
+          <img src="assets/3d/dagdusheth-halwai-ganapati.png" alt="3D Dagdusheth temple" />
+          <img src="assets/3d/parvati-hill-temple.png" alt="3D Parvati Hill" />
+          <img src="assets/3d/osho-meditation-resort.png" alt="3D Osho Resort" />
+          <img src="assets/3d/national-war-memorial.png" alt="3D National War Memorial" />
+          <img src="assets/3d/raja-dinkar-kelkar-museum.png" alt="3D Kelkar Museum" />
+          <img src="assets/3d/okayama-friendship-garden.png" alt="3D Okayama Garden" />
+          <img src="assets/3d/saras-baug.png" alt="3D Saras Baug" />
+          <img src="assets/3d/empress-garden.png" alt="3D Empress Garden" />
+          <img src="assets/3d/khadakwasla-dam.png" alt="3D Khadakwasla Dam" />
+          <img src="assets/3d/vetal-tekdi.png" alt="3D Vetal Tekdi" />
+        </div>
+      </div>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#gal-head", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.1);
+        tl.fromTo("#gal-count", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 0.3);
+        tl.fromTo("#gal-grid img", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.55, stagger: 0.08, ease: "power2.out" }, 0.35);
+        window.__timelines["04-gallery"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

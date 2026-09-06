@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+                #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          color: #2d211a;
+        }
+        .bg {
+          position: absolute;
+          inset: 0;
+          background: #fcfaf4;
+        }
+        .rule {
+          position: absolute;
+          left: 96px;
+          right: 96px;
+          top: 88px;
+          height: 1px;
+          background: #2d211a;
+          opacity: 0.18;
+        }
+        .kicker {
+          position: absolute;
+          left: 96px;
+          top: 120px;
+          font-family: "IBM Plex Mono", ui-monospace, monospace;
+          font-size: 22px;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #d9571e;
+          font-weight: 500;
+        }
+        .title {
+          position: absolute;
+          left: 96px;
+          right: 96px;
+          top: 280px;
+          font-family: "EB Garamond", Georgia, serif;
+          font-size: 128px;
+          line-height: 0.98;
+          font-weight: 800;
+          letter-spacing: -0.03em;
+        }
+        .title em {
+          font-style: italic;
+          color: #d9571e;
+          font-weight: 500;
+        }
+        .sub {
+          position: absolute;
+          left: 96px;
+          bottom: 140px;
+          font-family: Inter, "Segoe UI", sans-serif;
+          font-size: 32px;
+          color: #7a685c;
+          max-width: 900px;
+        }
+      </style>
+      <div id="root" data-composition-id="01-hook" data-width="1920" data-height="1080">
+        <div class="bg"></div>
+        <div class="rule" id="hook-rule"></div>
+        <div class="kicker" id="hook-kicker">A city guide, rebuilt</div>
+        <h1 class="title" id="hook-title">Explore<em>Pune</em></h1>
+        <p class="sub" id="hook-sub">Not a list of tickets. A city you walk into.</p>
+      </div>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#hook-kicker", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.2);
+        tl.fromTo("#hook-title", { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 1.0, ease: "power3.out" }, 0.45);
+        tl.fromTo("#hook-sub", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 1.2);
+        window.__timelines["01-hook"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -80,6 +80,54 @@ describe("sortPlaces", () => {
   });
 });
 
+describe("Shinde Chhatri seed place", () => {
+  it("is a live east-Pune catalog entry on Mahadji’s Wanowrie memorial", () => {
+    const place = places.find((p) => /shinde/i.test(p.name) && /chhatri|chatri/i.test(p.name));
+    expect(place, "expected a seed place named Shinde Chatri/Chhatri").toBeDefined();
+    expect(place!.source).toBe("seed");
+    expect(place!.slug).toBe("shinde-chhatri");
+    expect(place!.area).toMatch(/Wanowrie|Wanawadi|Cantonment/i);
+    expect(place!.description).toMatch(/1794/);
+    expect(place!.description).toMatch(/Mahadji|Mahadaji/i);
+    expect(place!.timings.length).toBeGreaterThan(0);
+    expect(place!.entryFee.length).toBeGreaterThan(0);
+    expect(place!.howToReach.length).toBeGreaterThan(0);
+    expect(place!.tips.length).toBeGreaterThan(0);
+    // East Pune cantonment pocket — not the old-city core around 18.52, 73.85.
+    expect(place!.coordinates.lng).toBeGreaterThan(73.88);
+    expect(place!.coordinates.lat).toBeGreaterThan(18.48);
+    expect(place!.coordinates.lat).toBeLessThan(18.52);
+    const oldCityDist = Math.hypot(place!.coordinates.lat - 18.52, place!.coordinates.lng - 73.85);
+    expect(oldCityDist).toBeGreaterThan(0.04);
+  });
+});
+
+describe("Katraj Zoo Park seed place", () => {
+  it("is a live south-Pune catalog entry for the PMC zoo campus", () => {
+    const place = places.find((p) => /katraj/i.test(p.name) && /zoo/i.test(p.name));
+    expect(place, "expected a seed place named Katraj Zoo").toBeDefined();
+    expect(place!.source).toBe("seed");
+    expect(place!.slug).toBe("katraj-zoo-park");
+    expect(place!.area).toMatch(/Katraj/i);
+    expect(place!.description).toMatch(/Rajiv Gandhi/i);
+    expect(place!.description).toMatch(/snake park/i);
+    expect(place!.description).toMatch(/orphanage/i);
+    expect(place!.description).toMatch(/Katraj Lake/i);
+    expect(place!.description).toMatch(/1999/);
+    expect(place!.timings).toMatch(/Wednesday/i);
+    expect(place!.entryFee.length).toBeGreaterThan(0);
+    expect(place!.howToReach.length).toBeGreaterThan(0);
+    expect(place!.tips.length).toBeGreaterThan(0);
+    // South Pune Katraj — not the old-city core around 18.52, 73.85.
+    expect(place!.coordinates.lat).toBeLessThan(18.5);
+    expect(place!.coordinates.lat).toBeGreaterThan(18.43);
+    expect(place!.coordinates.lng).toBeGreaterThan(73.84);
+    expect(place!.coordinates.lng).toBeLessThan(73.88);
+    const oldCityDist = Math.hypot(place!.coordinates.lat - 18.52, place!.coordinates.lng - 73.85);
+    expect(oldCityDist).toBeGreaterThan(0.04);
+  });
+});
+
 describe("queryPlaces", () => {
   it("filters then sorts", () => {
     const result = queryPlaces(places, { category: "forts-palaces", sort: "rating" });

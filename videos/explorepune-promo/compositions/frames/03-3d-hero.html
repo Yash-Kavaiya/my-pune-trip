@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+                #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          color: #fcfaf4;
+        }
+        .plate {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          object-fit: cover;
+          object-position: center 40%;
+        }
+        .veil {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(90deg, rgba(20, 14, 10, 0.62) 0%, rgba(20, 14, 10, 0.08) 58%, rgba(20, 14, 10, 0.35) 100%);
+        }
+        .kicker {
+          position: absolute;
+          left: 80px;
+          top: 120px;
+          font-family: "IBM Plex Mono", ui-monospace, monospace;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #fde3c9;
+        }
+        .name {
+          position: absolute;
+          left: 80px;
+          bottom: 160px;
+          font-family: "EB Garamond", Georgia, serif;
+          font-size: 88px;
+          font-weight: 700;
+          line-height: 1;
+        }
+        .hint {
+          position: absolute;
+          left: 80px;
+          bottom: 88px;
+          font-family: Inter, "Segoe UI", sans-serif;
+          font-size: 26px;
+          color: #fde3c9;
+        }
+      </style>
+      <div id="root" data-composition-id="03-3d-hero" data-width="1920" data-height="1080">
+        <img
+          class="plate"
+          id="hero-plate"
+          src="assets/3d/shaniwar-wada.png"
+          alt="Interactive 3D diorama of Shaniwar Wada from ExplorePune"
+        />
+        <div class="veil"></div>
+        <div class="kicker" id="hero-kicker">Interactive 3D · live on the site</div>
+        <h2 class="name" id="hero-name">Shaniwar Wada</h2>
+        <p class="hint" id="hero-hint">Drag to orbit · scroll to zoom · stand at the Delhi Darwaza</p>
+      </div>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#hero-plate", { scale: 1.08 }, { scale: 1.0, duration: 12, ease: "none" }, 0);
+        tl.fromTo("#hero-kicker", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.4);
+        tl.fromTo("#hero-name", { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.7);
+        tl.fromTo("#hero-hint", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power2.out" }, 1.3);
+        window.__timelines["03-3d-hero"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

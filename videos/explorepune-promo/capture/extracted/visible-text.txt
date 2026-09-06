@@ -1,0 +1,109 @@
+[span] Explore
+[span] Pune
+[a] Suggest a place
+[a] Suggest a place
+[span] Community-powered guide to Pune
+[h1] Discover the soul of
+[span] Pune
+[p] Forts and palaces, beloved temples, Japanese gardens and breezy hilltops — explore
+[p] curated places on a map, read honest guides, and suggest your own favourite spots.
+[button] Search
+[span] Popular:
+[a] Shaniwar Wada
+[a] Sinhagad Fort
+[a] Dagdusheth Ganpati
+[a] Okayama Garden
+[p] Browse by category
+[h2] What kind of Pune are you in the mood for?
+[h3] Forts & Palaces
+[p] Maratha-era grandeur, gateways and battle-worn ramparts.
+[h3] Temples & Spiritual
+[p] Beloved Ganesh shrines, rock-cut caves and calm retreats.
+[h3] Nature & Gardens
+[p] Japanese-style gardens, green parks and leafy escapes.
+[h3] Museums & Culture
+[p] Artefacts, lamps, sculptures and moving memorials.
+[h3] Lakes & Hills
+[p] Sunrise treks, dam views and breezy hilltop sunsets.
+[p] Editor's picks
+[h2] Pune's must-see highlights
+[p] A handful of icons to anchor any trip — start here if it's your first time.
+[a] View all places
+[span] Temples & Spiritual
+[span] Featured
+[h3] Dagdusheth Halwai Ganapati Temple
+[p] Budhwar Peth
+[p] Pune's most beloved Ganesh temple, dazzling with gold and at its grandest during Ganeshotsav.
+[span] 4.8
+[span] 30–45 minutes
+[span] Free
+[span] Forts & Palaces
+[span] Featured
+[h3] Sinhagad Fort
+[p] Thoptewadi (off Sinhagad Road)
+[p] A dramatic hill fort with panoramic views, a legendary battle, and famous kanda-bhaji & curd stalls.
+[span] 4.6
+[span] Half day
+[span] Free
+[span] Museums & Culture
+[span] Featured
+[h3] Aga Khan Palace
+[p] Yerawada (Nagar Road)
+[p] Stately Italianate arches, sweeping lawns, and a profound chapter of India's freedom struggle.
+[span] 4.5
+[span] 1–1.5 hours
+[span] Paid
+[span] Nature & Gardens
+[span] Featured
+[h3] Pune-Okayama Friendship Garden
+[p] Sinhagad Road (Dattawadi)
+[p] Also called Pu La Deshpande Udyan — a vast, tranquil Japanese-style garden, one of the largest of its kind in Asia.
+[span] 4.5
+[span] 1–1.5 hours
+[span] Paid
+[span] Forts & Palaces
+[span] Featured
+[h3] Shaniwar Wada
+[p] Shaniwar Peth
+[p] The iconic 18th-century seat of the Peshwas — massive gates, fountains and an evening light & sound show.
+[span] 4.5
+[span] 1–2 hours
+[span] Paid
+[a] View all places
+[p] Curated collections
+[h2] Themed ways to explore
+[p] Hand-picked groupings for the mood you're in or the season you're visiting.
+[h3] Hidden Gems
+[p] Quieter corners the guidebooks rush past.
+[span] places
+[h3] Monsoon Special
+[p] At their greenest and most dramatic in the rains.
+[span] places
+[h3] One-Day Heritage Trail
+[p] Shivaji, the Peshwas and the freedom struggle in a single day.
+[span] places
+[h3] Family Day Out
+[p] Easy, green and fun for all ages.
+[span] places
+[h2] Know a spot we're missing?
+[p] ExplorePune grows with local knowledge. Suggest a place, add a photo and a few lines on why it's special — our team reviews every submission before it goes live.
+[a] Suggest a place
+[p] Discover Pune's famous forts, temples, gardens and hidden gems. Browse a curated, map-based directory, read rich place guides, leave reviews, and suggest new spots for the community.
+[a] All places
+[a] Forts & Palaces
+[a] Temples & Spiritual
+[a] Nature & Gardens
+[h3] Community
+[a] Suggest a place
+[a] Admin dashboard
+[h3] If a walk through this city meant something
+[p] Every 3D place you just opened — the cave under the street, the flame at Ghorpadi, the lake at sunset — is built with AI hours that cost a real subscription. ExplorePune is a one-person love letter. There is no company behind it. If a page helped you plan a Sunday with someone you care about, consider sponsoring next month's AI credit. Even a small UPI keeps a model lit, and a stranger's trip a little kinder.
+[span] explorepune@ybl
+[button] Copy UPI ID
+[a] Sponsor on UPI
+[p] Any amount. Any time. It goes straight to keeping the 3D walks — and the AI that draws them — alive.
+[p] ExplorePune
+[p] . A community-powered guide to Pune.
+[p] Support:
+[p] explorepune@ybl
+[p] · always verify timings & fees before you visit.

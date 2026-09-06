@@ -106,6 +106,12 @@ import {
   EmpressFaqs,
   EmpressStory,
 } from "@/components/places/empress/empress-story";
+import { ChhatriExperience } from "@/components/places/chhatri/chhatri-experience";
+import {
+  ChhatriEtiquette,
+  ChhatriFaqs,
+  ChhatriStory,
+} from "@/components/places/chhatri/chhatri-story";
 import { GARDEN_FAQS } from "@/lib/data/okayama-garden";
 import { FORT_FAQS } from "@/lib/data/shaniwar-wada";
 import { TEMPLE_FAQS } from "@/lib/data/dagdusheth-temple";
@@ -121,6 +127,7 @@ import { MEMORIAL_FAQS } from "@/lib/data/national-war-memorial";
 import { DAM_FAQS } from "@/lib/data/khadakwasla-dam";
 import { BAUG_FAQS } from "@/lib/data/saras-baug";
 import { EMPRESS_FAQS } from "@/lib/data/empress-garden";
+import { CHHATRI_FAQS } from "@/lib/data/shinde-chhatri";
 import { PlaceLocationMap } from "@/components/map/place-location-map";
 import { SITE } from "@/lib/site";
 import { Badge } from "@/components/ui/badge";
@@ -149,6 +156,7 @@ const MEMORIAL_SLUG = "national-war-memorial";
 const DAM_SLUG = "khadakwasla-dam";
 const SARAS_SLUG = "saras-baug";
 const EMPRESS_SLUG = "empress-garden";
+const CHHATRI_SLUG = "shinde-chhatri";
 
 export function PlaceDetail({
   place,
@@ -179,6 +187,7 @@ export function PlaceDetail({
   const isDam = place.slug === DAM_SLUG;
   const isSaras = place.slug === SARAS_SLUG;
   const isEmpress = place.slug === EMPRESS_SLUG;
+  const isChhatri = place.slug === CHHATRI_SLUG;
   const has3d =
     isGarden ||
     isFort ||
@@ -194,7 +203,8 @@ export function PlaceDetail({
     isMemorial ||
     isDam ||
     isSaras ||
-    isEmpress;
+    isEmpress ||
+    isChhatri;
 
   return (
     <article>
@@ -351,6 +361,16 @@ export function PlaceDetail({
         />
       )}
 
+      {isChhatri && (
+        <ChhatriExperience
+          name={place.name}
+          area={place.area}
+          rating={displayRating}
+          reviewCount={summary.count > 0 ? summary.count : undefined}
+          tagline={place.shortDescription}
+        />
+      )}
+
       {/* Breadcrumb */}
       <nav
         aria-label="Breadcrumb"
@@ -429,6 +449,7 @@ export function PlaceDetail({
       {isDam && <DamStory />}
       {isSaras && <BaugStory />}
       {isEmpress && <EmpressStory />}
+      {isChhatri && <ChhatriStory />}
 
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-12 lg:py-12">
         {/* Main column */}
@@ -502,6 +523,7 @@ export function PlaceDetail({
           {isDam && <DamEtiquette />}
           {isSaras && <BaugEtiquette />}
           {isEmpress && <EmpressEtiquette />}
+          {isChhatri && <ChhatriEtiquette />}
 
           <section aria-labelledby="map-heading" className="space-y-4">
             <h2 id="map-heading" className="font-heading text-2xl font-semibold">
@@ -546,6 +568,7 @@ export function PlaceDetail({
           {isDam && <DamFaqs />}
           {isSaras && <BaugFaqs />}
           {isEmpress && <EmpressFaqs />}
+          {isChhatri && <ChhatriFaqs />}
 
           <ReviewSection
             placeSlug={place.slug}
@@ -625,6 +648,7 @@ function faqsFor(slug: string): { q: string; a: string }[] | undefined {
   if (slug === DAM_SLUG) return DAM_FAQS;
   if (slug === SARAS_SLUG) return BAUG_FAQS;
   if (slug === EMPRESS_SLUG) return EMPRESS_FAQS;
+  if (slug === CHHATRI_SLUG) return CHHATRI_FAQS;
   return undefined;
 }
 

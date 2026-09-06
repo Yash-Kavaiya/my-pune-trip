@@ -1,7 +1,7 @@
 import type { Place } from "@/lib/types";
 
 /**
- * Curated seed dataset of 15 standout places in Pune.
+ * Curated seed dataset of 17 standout places in Pune.
  *
  * Images are intentionally left empty — the UI renders a branded gradient
  * cover (see <PlaceCover/>) so the site looks cohesive offline. Drop real,
@@ -185,9 +185,41 @@ export const PLACES: Place[] = [
     bestFor: ["history", "family"],
     durationEstimate: "45 minutes – 1 hour",
     rating: 4.5,
-    nearbyPlaceSlugs: ["empress-garden", "aga-khan-palace"],
+    nearbyPlaceSlugs: ["empress-garden", "aga-khan-palace", "shinde-chhatri"],
     featured: false,
     lastVerified: "2026-06-01",
+    source: "seed",
+  },
+  {
+    slug: "shinde-chhatri",
+    name: "Shinde Chhatri",
+    category: "forts-palaces",
+    area: "Wanowrie (Wanawadi / Pune Cantonment)",
+    shortDescription:
+      "Mahadji Shinde’s Anglo-Rajasthani memorial on his 1794 cremation ground — yellow sandstone hall, stained glass, and a Shiva temple behind.",
+    description:
+      "Shinde Chhatri (also spelled Chatri) stands in Wanowrie, in the Pune Cantonment, on the ground where Mahadji Shinde — the Maratha commander-in-chief under the Peshwas — was cremated on 12 February 1794. He had already raised a Shiva temple here; his descendants later added the yellow-sandstone chhatri hall in Indo-Rajasthani style, with clustered domes, jharokha balconies, arched corridors and English coloured-glass windows. In 1910 a samadhi was built outside the temple sanctum on the exact cremation spot. The word chhatri means umbrella: visitors close theirs on the premises.",
+    coordinates: { lat: 18.4964, lng: 73.9001 },
+    heroImage: "",
+    images: [],
+    timings: "6:00 AM – 9:00 PM daily",
+    entryFee: "₹20 (Indians) · ₹200 (foreign nationals)",
+    isFree: false,
+    howToReach:
+      "On Wanowrie / Wanawadi Road in the Pune Cantonment, ~6 km from Pune Station via Solapur Road and Fatima Nagar. Auto or cab is easiest; a small parking bay sits at the gate. Pair it with the National War Memorial in Ghorpadi or Empress Garden, both in the same east-Pune pocket.",
+    tips: [
+      "Close your umbrella at the gate — chhatri means umbrella, and that is the house rule.",
+      "Walk through the hall, then go behind it: the Shiva temple and Mahadji’s samadhi are the reason the complex exists.",
+      "Morning light on the yellow sandstone is the best for photographs.",
+      "Combine with the National War Memorial or Empress Garden, a short drive away.",
+    ],
+    bestSeasons: ["winter", "all"],
+    bestFor: ["history", "photography", "family", "spirituality"],
+    durationEstimate: "45 minutes – 1 hour",
+    rating: 4.5,
+    nearbyPlaceSlugs: ["national-war-memorial", "empress-garden", "aga-khan-palace"],
+    featured: true,
+    lastVerified: "2026-08-01",
     source: "seed",
   },
   {
@@ -389,7 +421,7 @@ export const PLACES: Place[] = [
     bestFor: ["nature", "family", "couples"],
     durationEstimate: "1–1.5 hours",
     rating: 4.3,
-    nearbyPlaceSlugs: ["national-war-memorial", "aga-khan-palace"],
+    nearbyPlaceSlugs: ["national-war-memorial", "aga-khan-palace", "shinde-chhatri"],
     featured: false,
     lastVerified: "2026-06-01",
     source: "seed",
@@ -450,9 +482,42 @@ export const PLACES: Place[] = [
     bestFor: ["family", "couples", "nature", "photography"],
     durationEstimate: "1–2 hours",
     rating: 4.4,
-    nearbyPlaceSlugs: ["sinhagad-fort"],
+    nearbyPlaceSlugs: ["sinhagad-fort", "katraj-zoo-park"],
     featured: false,
     lastVerified: "2026-06-01",
+    source: "seed",
+  },
+  {
+    slug: "katraj-zoo-park",
+    name: "Katraj Zoo Park",
+    category: "nature-gardens",
+    area: "Katraj",
+    shortDescription:
+      "Rajiv Gandhi Zoological Park — Pune’s PMC zoo, snake park and animal orphanage around 42-acre Katraj Lake.",
+    description:
+      "Rajiv Gandhi Zoological Park, also called Katraj Zoo or Pune Zoo, is the Pune Municipal Corporation campus that opened on 14 March 1999 in Katraj, south Pune. The 130-acre grounds are three places in one: a wooded zoo of open enclosures, a snake park, and an animal orphanage, and they include the 42-acre Katraj Lake. Families come for the white tiger and other large cats, the long enclosure trail, and the lakeside walk. The zoo is closed every Wednesday.",
+    coordinates: { lat: 18.4529, lng: 73.8612 },
+    heroImage: "",
+    images: [],
+    timings:
+      "9:30 AM – 5:00 PM (16 Jun–31 Mar) · 9:30 AM – 5:30 PM (1 Apr–15 Jun) · Closed Wednesday",
+    entryFee: "₹60 (adults) · ₹20 (children under 4 ft 4 in) · ₹150 (foreign nationals)",
+    isFree: false,
+    howToReach:
+      "On the Pune–Satara Road in Katraj, ~12 km south of Pune Station. City buses and cabs run to the Katraj Dairy / zoo stop; parking is at the gate. Pair it with Sinhagad or Khadakwasla, both farther west on the same southern side of the city.",
+    tips: [
+      "Closed every Wednesday — do not plan a midweek visit.",
+      "Do not feed the animals or tap the snake-park glass.",
+      "The campus is 130 acres; start at the snake park, then walk the enclosure trail toward the lake, or take the battery vehicle.",
+      "Carry water and wear comfortable shoes. Mornings are cooler and quieter.",
+    ],
+    bestSeasons: ["winter", "monsoon", "all"],
+    bestFor: ["family", "nature", "photography"],
+    durationEstimate: "2–3 hours",
+    rating: 4.4,
+    nearbyPlaceSlugs: ["khadakwasla-dam", "sinhagad-fort", "parvati-hill-temple"],
+    featured: true,
+    lastVerified: "2026-08-01",
     source: "seed",
   },
 ];
